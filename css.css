@@ -5,6 +5,16 @@ a {
   text-decoration: none;
   color: black;
 }
+h2,
+h3,
+h4,
+a,
+p {
+  font-family: "Roboto";
+}
+.nom-resto {
+  font-family: Shrikhand;
+}
 h1.loader {
   text-align: center;
   font-family: "Shrikhand", sans-serif;
