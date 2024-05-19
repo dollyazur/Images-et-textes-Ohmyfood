@@ -43,14 +43,14 @@ p {
     visibility: hidden;
   }
 }
-main {
+.main-accueil {
   animation: fadeIn 2s linear;
   animation-delay: 5.4s;
   animation-fill-mode: both;
 }
+
 body {
   margin: 0;
-  animation: fadeIn 0.8s linear;
 }
 @keyframes fadeIn {
   0% {
