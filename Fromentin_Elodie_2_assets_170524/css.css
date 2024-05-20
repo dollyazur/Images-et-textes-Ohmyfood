@@ -5,6 +5,11 @@ a {
   text-decoration: none;
   color: black;
 }
+
+h1 {
+  display: flex;
+  justify-content: center;
+}
 h2,
 h3,
 h4,
@@ -60,7 +65,7 @@ body {
     opacity: 1;
   }
 }
-h1.loader {
+.loader {
   text-align: center;
   font-family: "Shrikhand", sans-serif;
   font-size: 4.6875em;
