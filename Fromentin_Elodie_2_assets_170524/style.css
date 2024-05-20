@@ -39,6 +39,84 @@ h1 {
 p {
   margin: 0;
 }
+img {
+  width: 100%;
+}
+button {
+  border: none;
+  color: white;
+  padding: 15px 29px;
+  font-size: 15px;
+  text-align: center;
+  background: linear-gradient(#ff79da 3%, #9356dc 120%);
+  width: min-content;
+  white-space: nowrap;
+  margin: auto;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  border-radius: 30px;
+  box-shadow: rgba(149, 157, 165, 0.5) 0px 8px 10px;
+  cursor: pointer;
+  transition: 0.4s ease-in-out;
+}
+button:hover {
+  opacity: 0.7;
+  box-shadow: rgba(149, 157, 165, 1) 0px 8px 10px;
+}
+.resto-card-content {
+  display: flex;
+  justify-content: space-between;
+}
+.cart-text {
+  display: flex;
+  flex-direction: column;
+}
+h4 {
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+.heart {
+  display: flex;
+  width: 58px;
+  height: 58px;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.heart-label {
+  width: 0;
+  cursor: pointer;
+  position: relative;
+  display: inline-block;
+}
+
+.heart-icon {
+  font-size: 2rem; /* Ajustez la taille selon vos besoins */
+  transition: all 0.3s ease;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* État initial du cœur */
+#heart-checkbox:not(:checked) + .heart-label .solid-heart {
+  opacity: 0;
+}
+
+/* État cliqué du cœur */
+#heart-checkbox:checked + .heart-label .solid-heart {
+  opacity: 1;
+  background: linear-gradient(#ff79da 3%, #9356dc 120%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Masquer l'icône régulière lorsque le cœur est cliqué */
+#heart-checkbox:checked + .heart-label .fa-regular {
+  opacity: 0;
+}
+
 /**********************************************loader***********************************************************/
 /*.loader-container {
   display: flex;
