@@ -4,8 +4,14 @@
   --third-color: #99e2d0;
 }
 body {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
   max-width: 768px;
   min-width: 375px;
+  max-height: 2252px;
 }
 header {
   display: flex;
@@ -14,10 +20,50 @@ header {
   text-align: center;
 }
 .hero-container {
+  font-weight: 500;
+  background-color: #eaeaea;
   display: flex;
   align-items: center;
   gap: 10px;
 }
+.paris-p {
+  font-weight: 400;
+}
+.reserver-explorer {
+  background-color: #f6f6f6;
+  width: 100%;
+}
+.fonctionnement {
+  padding: 0px 15px 0px 15px;
+}
+.fonctionnement-ul {
+  padding: 0;
+}
+.nbr {
+  color: white;
+  padding: 5px 10px 5px 10px;
+  background-color: #9356dc;
+  border-radius: 90px;
+  z-index: 1;
+}
+.fa-solid.fa-mobile-screen-button,
+.fa-solid.fa-list,
+.fa-solid.fa-store {
+  font-size: larger;
+}
+.fonctionnement-li {
+  margin-left: -10px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  gap: 15px;
+  padding-left: 25px;
+  align-items: center;
+  background-color: #f6f6f6;
+  border-radius: 20px;
+  box-shadow: rgba(149, 157, 165, 0.23) 0px 6px 10px;
+}
+
 main {
   font-family: "Roboto";
 }
@@ -26,6 +72,8 @@ main {
 }
 li {
   list-style: none;
+  display: flex;
+  align-items: center;
 }
 a {
   text-decoration: none;
@@ -37,11 +85,12 @@ h1 {
   justify-content: center;
 }
 p {
-  margin: 0;
+  font-size: 18px;
+  font-weight: 300;
+  margin-bottom: 0px;
+  margin-top: 5px;
 }
-img {
-  width: 100%;
-}
+
 button {
   border: none;
   color: white;
@@ -63,15 +112,37 @@ button:hover {
   opacity: 0.7;
   box-shadow: rgba(149, 157, 165, 1) 0px 8px 10px;
 }
+.resto-card {
+  background-color: white;
+  border-radius: 20px;
+  padding: 5px;
+  filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
+}
+.restaurant-img {
+  height: 124px;
+  width: 100%;
+  border-radius: 20px 20px 0px 0px;
+  object-fit: cover;
+}
 .resto-card-content {
+  height: 70px;
   display: flex;
   justify-content: space-between;
 }
-.cart-text {
+.card-txt {
+  margin-left: 10px;
+  padding-left: 10px;
   display: flex;
   flex-direction: column;
 }
-h4 {
+h3 {
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+h2 {
   margin-top: 15px;
   margin-bottom: 10px;
 }
@@ -152,9 +223,6 @@ h4 {
   animation-fill-mode: both;
 }
 
-body {
-  margin: 0;
-}
 @keyframes fadeIn {
   0% {
     opacity: 0;
