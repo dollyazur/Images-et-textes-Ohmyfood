@@ -11,7 +11,6 @@ body {
 
   max-width: 768px;
   min-width: 375px;
-  max-height: 2252px;
 }
 header {
   display: flex;
@@ -41,9 +40,8 @@ header {
   width: 100%;
   box-shadow: inset 0px 4px 4px 0px rgb(0 0 0 / 20%);
 }
-.fonctionnement,
-.restaurants {
-  padding: 0px 15px 0px 15px;
+.fonctionnement {
+  padding: 10px 15px 45px 15px;
 }
 .fonctionnement-ul {
   display: flex;
@@ -80,6 +78,8 @@ header {
 
 main {
   font-family: "Roboto";
+  max-width: 768px;
+  min-width: 375px;
 }
 .nom-resto {
   font-family: Shrikhand;
@@ -95,6 +95,7 @@ a {
 }
 
 h1 {
+  font-size: 1.7em;
   display: flex;
   justify-content: center;
 }
@@ -106,12 +107,13 @@ p {
 }
 
 button {
+  font-family: "Roboto";
   border: none;
   color: white;
   padding: 15px 29px;
   font-size: 15px;
   text-align: center;
-  background: linear-gradient(#ff79da 3%, #9356dc 120%);
+  background: linear-gradient(#ff79da, #9356dc);
   width: min-content;
   white-space: nowrap;
   margin: auto;
@@ -126,6 +128,19 @@ button:hover {
   opacity: 0.7;
   box-shadow: rgba(149, 157, 165, 1) 0px 8px 10px;
 }
+.w3-tag {
+  color: #269e80f0;
+  background-color: #99e2d0;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 7px 10px;
+  position: relative;
+  z-index: 2;
+}
+.restaurants {
+  background-color: #f6f6f6;
+  padding: 10px 15px 45px 15px;
+}
 .restaurants-cards {
   display: flex;
   flex-direction: column;
@@ -138,7 +153,7 @@ button:hover {
   filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
 }
 .restaurant-img {
-  height: 170px;
+  height: 208px;
   width: 100%;
   border-radius: 20px 20px 0px 0px;
   object-fit: cover;
@@ -160,12 +175,14 @@ h3 {
 }
 h2 {
   margin-top: 35px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 .heart {
   display: flex;
   width: 58px;
-  height: 58px;
+
   flex-direction: column;
   justify-content: flex-start;
   padding-top: 20px;
@@ -254,7 +271,7 @@ input {
   flex-wrap: nowrap;
   text-align: center;
   font-family: "Shrikhand", sans-serif;
-  font-size: 4.6875em;
+  font-size: 4.1em;
   color: transparent;
   letter-spacing: 0.01em;
 }
