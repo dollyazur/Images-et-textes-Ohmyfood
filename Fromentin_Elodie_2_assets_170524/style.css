@@ -128,13 +128,19 @@ button:hover {
   opacity: 0.7;
   box-shadow: rgba(149, 157, 165, 1) 0px 8px 10px;
 }
-.w3-tag {
+.new {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: #269e80f0;
   background-color: #99e2d0;
   font-size: 14px;
   font-weight: 500;
   padding: 7px 10px;
-  position: relative;
+  margin: 0;
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
   z-index: 2;
 }
 .restaurants {
