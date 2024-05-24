@@ -43,6 +43,16 @@ h3 {
   margin-top: 10px;
   margin-bottom: 0;
 }
+
+.etape-menu h4::after {
+  content: "";
+  width: 50px;
+  height: 2px;
+  display: block;
+  position: absolute;
+  background-color: #99e2d0;
+}
+
 p {
   font-size: 18px;
   font-weight: 300;
@@ -76,22 +86,38 @@ header {
   width: 100%;
 }
 .restaurant-menu-img {
-  height: 208px;
+  position: relative;
+  z-index: 1;
   width: 100%;
-  object-fit: cover;
 }
 .paris-p {
   font-weight: 500;
 }
 /**************menu uniqument*************************/
 .main-menu {
-  padding: 0px 15px;
+  padding: 20px 15px 0px 15px;
+  background-color: #f6f6f6;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+  transform: translate(0px, -60px);
+  position: relative;
+  z-index: 2;
 }
 .menu-title {
   display: flex;
   align-items: center;
   justify-content: space-between;
   width: 100%;
+}
+.arrow {
+  position: absolute;
+  z-index: 3;
+  left: 0;
+  top: 25px;
+  padding-left: 20px;
+}
+.fa-arrow-left {
+  font-size: 21px;
 }
 
 /*******************************Reserver Explorer*********************************************/
@@ -165,7 +191,8 @@ button:hover {
 /***************************************************Restaurants************************************/
 .nom-resto {
   font-family: Shrikhand;
-  font-size: xx-large;
+  font-size: 28px;
+  font-weight: 500;
 }
 .new {
   display: flex;
@@ -183,6 +210,8 @@ button:hover {
   z-index: 2;
 }
 .restaurants {
+  display: flex;
+  flex-direction: column;
   background-color: #f6f6f6;
   padding: 10px 15px 45px 15px;
 }
@@ -198,6 +227,8 @@ button:hover {
   gap: 20px;
 }
 .resto-card {
+  display: flex;
+  flex-direction: column;
   background-color: white;
   border-radius: 20px;
   filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
@@ -214,12 +245,10 @@ button:hover {
   justify-content: space-between;
 }
 .card-txt {
-  margin-left: 10px;
   padding-left: 10px;
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
-  overflow: hidden;
 }
 .price {
   display: flex;
@@ -257,19 +286,19 @@ button:hover {
   transition: margin-left 350ms;
 }
 .heart {
-  position: absolute;
-  z-index: 4;
+  position: relative;
+  z-index: 3;
   display: flex;
-  width: 92%;
-
   justify-content: flex-end;
   padding-top: 20px;
+  padding-right: 10px;
 }
 .heart-label {
-  width: 0;
+  width: 28px;
+  height: 28px;
   cursor: pointer;
   position: relative;
-  display: inline-block;
+  display: flex;
 }
 .heart-icon {
   font-size: 1.7rem;
