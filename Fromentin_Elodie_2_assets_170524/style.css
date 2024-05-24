@@ -186,6 +186,12 @@ button:hover {
   background-color: #f6f6f6;
   padding: 10px 15px 45px 15px;
 }
+.a-resto-cards {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 3;
+}
 .restaurants-cards {
   display: flex;
   flex-direction: column;
@@ -251,7 +257,13 @@ button:hover {
   transition: margin-left 350ms;
 }
 .heart {
-  padding: 0px 40px 40px 0px;
+  position: absolute;
+  z-index: 4;
+  display: flex;
+  width: 92%;
+
+  justify-content: flex-end;
+  padding-top: 20px;
 }
 .heart-label {
   width: 0;
