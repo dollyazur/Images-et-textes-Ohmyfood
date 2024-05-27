@@ -64,13 +64,24 @@ p {
 header {
   display: flex;
   flex-direction: column;
+}
+.arrow {
+  position: relative;
+  z-index: 3;
+  left: 0;
+  top: 45px;
+  padding-left: 20px;
+}
+.fa-arrow-left {
+  font-size: 21px;
+}
+/****************************************Hero***********************************/
+.hero {
+  display: flex;
+  flex-direction: column;
   align-items: center;
   text-align: center;
 }
-.header-title {
-  width: 100%;
-}
-/****************************************Hero***********************************/
 .hero-container {
   width: 100%;
   justify-content: center;
@@ -108,16 +119,6 @@ header {
   align-items: center;
   justify-content: space-between;
   width: 100%;
-}
-.arrow {
-  position: absolute;
-  z-index: 3;
-  left: 0;
-  top: 25px;
-  padding-left: 20px;
-}
-.fa-arrow-left {
-  font-size: 21px;
 }
 
 /*******************************Reserver Explorer*********************************************/
