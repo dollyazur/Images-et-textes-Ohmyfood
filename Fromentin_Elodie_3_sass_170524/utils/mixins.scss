@@ -1,0 +1,9 @@
+@import "../base/typographie";
+@import "../utils/variables.scss";
+
+@mixin title-font {
+  font-family: "Shrikhand";
+}
+@mixin all-font {
+  font-family: "Roboto";
+}

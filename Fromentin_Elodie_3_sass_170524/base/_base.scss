@@ -1,0 +1,50 @@
+@import "../utils/variables.scss";
+@import "../base/typographie";
+
+body {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 768px;
+  min-width: 375px;
+}
+main {
+  @include all-font;
+}
+footer {
+  @include all-font;
+}
+li {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+a {
+  text-decoration: none;
+  color: $a-color;
+}
+h1 {
+  font-size: 1.7em;
+  display: flex;
+  justify-content: center;
+}
+h2 {
+  margin-top: 35px;
+  margin-bottom: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+h3 {
+  margin-top: 10px;
+  margin-bottom: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+p {
+  font-size: 18px;
+  font-weight: 300;
+  margin-bottom: 0px;
+  margin-top: 5px;
+}
