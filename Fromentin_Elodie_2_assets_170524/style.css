@@ -52,12 +52,8 @@ p {
   font-weight: 300;
   margin-bottom: 0px;
   margin-top: 5px;
-}
-.menu-resto-card-content .card-txt p {
-  font-size: 16px;
   overflow: hidden;
   text-overflow: ellipsis;
-  white-space: nowrap;
 }
 
 /**************************Header********************************************/
@@ -297,97 +293,75 @@ button:hover {
 }
 .menu-resto-card-content {
   display: flex;
-  flex: 1;
   justify-content: space-between;
-  padding: 5px 0px 5px 5px;
+  padding-left: 5px;
   white-space: nowrap;
   overflow: hidden;
-  text-overflow: ellipsis;
+  width: 100%;
 }
 .card-txt {
   padding-left: 10px;
-
   flex-wrap: nowrap;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
-.price {
-  display: flex;
-  font-weight: 500;
-  align-items: flex-end;
-  padding: 0px 15px 10px 0px;
-}
-.price:hover {
-  animation: glisse 1s forwards;
-  animation-fill-mode: both;
-}
-@keyframes glisse {
-  0% {
-    transform: translatex(0px);
-    opacity: 1;
-  }
-  100% {
-    transform: translatex(-100px);
-    transform: scalex(0px);
-    opacity: 1;
-  }
-}
-.circle-check {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.fa-circle-check {
   position: absolute;
-  top: 0;
-  right: -100px;
-  bottom: 0;
-  background-color: #99e2d0;
-  border-radius: 0px 20px 20px 0px;
-  width: 100px;
-}
-.circle-label {
-  position: relative;
-  margin-left: -70px;
-  height: 50px;
-  display: flex;
-  align-items: center;
-}
-.fa-regular.fa-circle-check {
   font-size: x-large;
   color: white;
+  height: 100%;
+  width: 12%;
   display: flex;
-  justify-content: flex-end;
-  width: 170px;
+  justify-content: center;
+  align-items: center;
+  background-color: #99e2d0;
+  border-radius: 0px 20px 20px 0px;
+}
+.menu-resto-card {
+  display: flex;
+  background-color: white;
+  border-radius: 20px;
+  filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+  overflow: hidden;
+}
+.menu-card-txt {
+  padding: 0px 0px 10px 15px;
+  flex-wrap: nowrap;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.reunion {
+  display: flex;
+  align-items: flex-end;
+  padding-left: 10px;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.circle-bg {
+  width: 0%;
+}
+.animation {
+  display: flex;
+  align-items: flex-end;
   padding-right: 20px;
+  font-weight: 700;
+  padding-bottom: 10px;
 }
-
-.circle-check:hover {
-  animation: glisse 1s forwards;
+.menu-resto-card-content:hover {
+  animation: pousse-toi 1s forwards;
 }
-
-/*
-@keyframes check {
+@keyframes pousse-toi {
   0% {
-    transform: translateX(1);
+    width: 100%;
   }
   100% {
-    transform: translatex(0);
+    width: 88%;
   }
 }
-*/
-/*.circle-checkbox:not(:checked) + .circle-label .fa-circle-check {
-  visibility: hidden;
-  background-color: transparent;
-}
-.circle-checkbox:checked + .circle-label .fa-circle-check .circle-check {
-  visibility: visible;
-
-  right: 0px;
-  transition: 0.7s ease-in-out;
-  transition-property: right;
-  z-index: 2;
-}*/
-
 .heart {
   position: relative;
   z-index: 3;
@@ -420,7 +394,6 @@ input {
 .heart-checkbox:checked + .heart-label .solid-heart {
   opacity: 1;
   background: linear-gradient(#ff79da 3%, #9356dc 120%);
-  transition: 1s linear;
 
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
