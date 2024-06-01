@@ -1,0 +1,33 @@
+.etape-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  &1 {
+    animation: slide 2s forwards;
+    animation-delay: 0s;
+    opacity: 0;
+  }
+
+  &2 {
+    animation: slide 2s forwards;
+    animation-delay: 0.5s;
+    opacity: 0;
+  }
+
+  &3 {
+    animation: slide 2s forwards;
+    animation-delay: 1s;
+    opacity: 0;
+  }
+  @keyframes slide {
+    0% {
+      transform: translatex(100px);
+      opacity: 0%;
+    }
+    100% {
+      transform: translatex(0px);
+      opacity: 100%;
+    }
+  }
+}
