@@ -1,0 +1,18 @@
+@import "../utils/mixins.scss";
+@import "../utils/variables.scss";
+
+.new {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $new-second-color;
+  background-color: $third-color;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 7px 10px;
+  margin: 0;
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  z-index: 2;
+}

@@ -236,7 +236,8 @@ button:hover {
   width: 100%;
   z-index: 3;
 }
-.restaurants .restaurants-cards,
+/*card-group*/
+.restaurants-cards,
 .menu-restaurants-cards {
   display: flex;
   flex-direction: column;
@@ -332,7 +333,7 @@ button:hover {
   overflow: hidden;
   text-overflow: ellipsis;
 }
-.reunion {
+/*.reunion {
   display: flex;
   align-items: flex-end;
   padding-left: 10px;
@@ -340,7 +341,7 @@ button:hover {
   flex-wrap: nowrap;
   white-space: nowrap;
   text-overflow: ellipsis;
-}
+}*/
 .circle-bg {
   width: 0%;
 }
@@ -435,7 +436,7 @@ footer {
   font-size: small;
 }
 /**********************************************loader***********************************************************/
-.loader-container {
+/*.loader-container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -525,3 +526,4 @@ footer {
 .loader span:nth-child(8) {
   animation-delay: 0.7s;
 }
+*/
