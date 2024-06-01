@@ -79,7 +79,6 @@ header {
   text-align: center;
 }
 .hero-container {
-  /*.hero__container*/
   width: 100%;
   justify-content: center;
   padding: 15px 0px 15px 0px;
@@ -317,6 +316,7 @@ button:hover {
   align-items: center;
   background-color: #99e2d0;
   border-radius: 0px 20px 20px 0px;
+  padding-right: 5px;
 }
 .menu-resto-card {
   display: flex;

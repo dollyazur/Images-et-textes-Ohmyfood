@@ -1,0 +1,16 @@
+@import "../utils/mixins.scss";
+
+header {
+  display: flex;
+  flex-direction: column;
+}
+.arrow {
+  position: relative;
+  z-index: 3;
+  left: 0;
+  top: 45px;
+  padding-left: 20px;
+}
+.fa-arrow-left {
+  font-size: 21px;
+}

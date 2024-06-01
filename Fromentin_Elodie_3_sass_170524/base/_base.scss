@@ -1,6 +1,5 @@
 @import "../utils/variables.scss";
-@import "../base/typographie";
-
+@import "../utils/mixins.scss";
 body {
   margin: auto;
   display: flex;
@@ -9,12 +8,11 @@ body {
   max-width: 768px;
   min-width: 375px;
 }
-main {
-  @include all-font;
-}
+main,
 footer {
-  @include all-font;
+  @mixin all-font;
 }
+
 li {
   list-style: none;
   display: flex;
@@ -47,4 +45,6 @@ p {
   font-weight: 300;
   margin-bottom: 0px;
   margin-top: 5px;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
