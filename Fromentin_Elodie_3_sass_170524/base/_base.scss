@@ -10,7 +10,7 @@ body {
 }
 main,
 footer {
-  @mixin all-font;
+  @include all-font;
 }
 
 li {

@@ -1,0 +1,76 @@
+@import "../main-accueil.scss";
+
+/*******************************Reserver Explorer*********************************************/
+.reserver-explorer {
+  background-color: $main-bg-color;
+  width: 100%;
+  box-shadow: inset 0px 6px 4px -2px rgb(0 0 0 / 20%);
+}
+/********************************Fonctionnement********************************************/
+.fonctionnement {
+  padding: 10px 15px 45px 15px;
+}
+.fonctionnement-ul {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 0;
+}
+.nbr {
+  font-weight: 400;
+  font-size: small;
+  color: $white-color;
+  padding: 5px 9px 5px 9px;
+  background-color: $main-color;
+  border-radius: 90px;
+  z-index: 1;
+  text-overflow: clip;
+}
+.fa-solid.fa-mobile-screen-button,
+.fa-solid.fa-list {
+  font-size: larger;
+  color: $fa-color;
+}
+.fa-solid.fa-store {
+  font-size: larger;
+  color: $main-color;
+}
+.fonctionnement-li {
+  padding: 7px 0px 7px 35px;
+  margin-left: -10px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  gap: 25px;
+  align-items: center;
+  background-color: $main-bg-color;
+  border-radius: 20px;
+  box-shadow: $box-shadow-fonctionnement 0px 6px 10px;
+}
+/***************************Restaurants*****************************/
+.restaurants {
+  display: flex;
+  flex-direction: column;
+  background-color: $main-bg-color;
+  padding: 10px 15px 45px 15px;
+}
+.a-resto-cards {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 3;
+}
+.resto-card {
+  display: flex;
+  flex-direction: column;
+  background-color: $white-color;
+  border-radius: 20px;
+  filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+  overflow: hidden;
+}
+.restaurant-img {
+  height: 208px;
+  width: 100%;
+  border-radius: 20px 20px 0px 0px;
+  object-fit: cover;
+}

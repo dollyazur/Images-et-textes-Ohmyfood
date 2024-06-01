@@ -236,9 +236,7 @@ button:hover {
   width: 100%;
   z-index: 3;
 }
-/*card-group*/
-.restaurants-cards,
-.menu-restaurants-cards {
+.card-group {
   display: flex;
   flex-direction: column;
   gap: 20px;
