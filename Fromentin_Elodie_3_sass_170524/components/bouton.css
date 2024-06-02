@@ -1,13 +1,14 @@
-@import "../utils/variables.scss";
-@import "../utils/mixins.scss";
+/*polices Roboto et Shrikhand*/
+@import url(https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shrikhand&display=swap);
 button {
   display: flex;
   border: none;
-  color: $white-color;
+  color: white;
   padding: 15px 29px;
   font-size: 15px;
   text-align: center;
   background: linear-gradient(#ff79da, #9356dc);
+  width: -moz-min-content;
   width: min-content;
   white-space: nowrap;
   margin: auto;
@@ -17,9 +18,8 @@ button {
   box-shadow: rgba(149, 157, 165, 0.5) 0px 8px 10px;
   cursor: pointer;
   transition: 0.4s ease-in-out;
-
-  &:hover {
-    opacity: 0.7;
-    box-shadow: rgba(149, 157, 165, 1) 0px 8px 10px;
-  }
 }
+button:hover {
+  opacity: 0.7;
+  box-shadow: rgb(149, 157, 165) 0px 8px 10px;
+}/*# sourceMappingURL=bouton.css.map */

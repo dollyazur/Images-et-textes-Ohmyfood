@@ -1,8 +1,7 @@
-@import "../utils/variables.scss";
-@import "../utils/mixins.scss";
-
+/*polices Roboto et Shrikhand*/
+@import url(https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shrikhand&display=swap);
 footer {
-  background-color: $footer-bg-color;
+  background-color: #2c2c2c;
   position: relative;
   z-index: 1;
 }
@@ -13,29 +12,35 @@ footer {
   padding-top: 25px;
   padding-left: 40px;
 }
+
 .footer-content {
   display: flex;
   align-items: center;
   gap: 15px;
-  color: $white-color;
+  color: white;
 }
+
 .footer-container {
   padding-top: 20px;
   border-bottom-width: 20px;
   padding-bottom: 20px;
   margin: 0;
 }
+
 .footer-txt {
   font-size: 16px;
 }
+
 .fa-solid.fa-utensils {
-  color: $white-color;
+  color: white;
 }
+
 .fa-solid.fa-handshake.fa-rotate-by {
   --fa-rotate-angle: -45deg;
-  color: $white-color;
+  color: white;
   font-size: small;
 }
+
 @media (min-width: 768px) {
   .footer {
     display: flex;
@@ -49,4 +54,4 @@ footer {
     display: flex;
     justify-content: space-evenly;
   }
-}
+}/*# sourceMappingURL=footer.css.map */

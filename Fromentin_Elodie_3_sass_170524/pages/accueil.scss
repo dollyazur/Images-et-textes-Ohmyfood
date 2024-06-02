@@ -6,14 +6,16 @@
   width: 100%;
   box-shadow: inset 0px 6px 4px -2px rgb(0 0 0 / 20%);
 }
+@media (min-width: 768px) {
+  .reserver-explorer h2 {
+    font-size: xxx-large;
+  }
+}
 /********************************Fonctionnement********************************************/
 .fonctionnement {
   padding: 10px 15px 45px 15px;
 }
 .fonctionnement-ul {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
   padding: 0;
 }
 .nbr {
@@ -35,6 +37,9 @@
   font-size: larger;
   color: $main-color;
 }
+.li {
+  margin-bottom: 20px;
+}
 .fonctionnement-li {
   padding: 7px 0px 7px 35px;
   margin-left: -10px;
@@ -47,11 +52,28 @@
   border-radius: 20px;
   box-shadow: $box-shadow-fonctionnement 0px 6px 10px;
 }
+@media (min-width: 768px) {
+  .fonctionnement {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    max-width: 1100px;
+    margin: auto;
+  }
+  .fonctionnement-ul {
+    display: flex;
+    justify-content: space-between;
+  }
+  .fonctionnement-li h4 {
+    padding-right: 40px;
+  }
+}
 /***************************Restaurants*****************************/
+.bg-resto {
+  background-color: #f6f6f6;
+  margin-bottom: -60px;
+}
 .restaurants {
-  display: flex;
-  flex-direction: column;
-  background-color: $main-bg-color;
   padding: 10px 15px 45px 15px;
 }
 .a-resto-cards {
@@ -67,10 +89,21 @@
   border-radius: 20px;
   filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
   overflow: hidden;
+  margin-bottom: 25px;
 }
 .restaurant-img {
   height: 208px;
-  width: 100%;
   border-radius: 20px 20px 0px 0px;
   object-fit: cover;
+}
+@media (min-width: 768px) {
+  .restaurants {
+    display: flex;
+    flex-direction: column;
+    max-width: 1100px;
+    margin: auto;
+  }
+  .resto-card {
+    width: 45%;
+  }
 }

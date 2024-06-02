@@ -17,7 +17,7 @@
   gap: 10px;
 }
 .menu-title {
-  padding: 20px 0px 20px 0px;
+  padding: 20px 0;
   text-transform: uppercase;
 }
 .menu-title::after {
@@ -29,6 +29,10 @@
   background-color: $third-color;
   margin-top: 5px;
   padding-top: 1px;
+}
+.bg-resto {
+  background-color: $main-bg-color;
+  margin-bottom: -60px;
 }
 .nom-resto {
   @include title-font;
@@ -58,4 +62,21 @@
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+@media (min-width: 768px) {
+  .restaurant-menu-img {
+    max-height: 400px;
+    object-fit: cover;
+  }
+
+  .main-menu .resto-card-content {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    padding-bottom: 50px;
+    align-items: center;
+  }
+  .main-menu .resto-card-content .card-txt .nom-resto {
+    font-size: 35px;
+  }
 }

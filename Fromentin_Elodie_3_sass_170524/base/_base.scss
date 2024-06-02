@@ -8,6 +8,12 @@ body {
   max-width: 768px;
   min-width: 375px;
 }
+@media (min-width: 768px) {
+  body {
+    max-width: 1903px;
+    min-width: 768px;
+  }
+}
 main,
 footer {
   @include all-font;

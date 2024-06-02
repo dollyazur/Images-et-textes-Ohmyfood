@@ -17,6 +17,12 @@ body {
   min-width: 375px;
 }
 
+@media (min-width: 768px) {
+  body {
+    max-width: 1903px;
+    min-width: 768px;
+  }
+}
 main,
 footer {
   font-family: "Roboto";
@@ -175,16 +181,15 @@ header {
 /*polices Roboto et Shrikhand*/
 footer {
   background-color: #2c2c2c;
-}
-
-.footer-menu {
-  transform: translate(0px, -60px);
+  position: relative;
+  z-index: 1;
 }
 
 .footer-img {
   filter: invert(1);
   height: 18px;
-  padding-bottom: 20px;
+  padding-top: 25px;
+  padding-left: 40px;
 }
 
 .footer-content {
@@ -195,7 +200,10 @@ footer {
 }
 
 .footer-container {
-  margin: 30px 0px 30px 0px;
+  padding-top: 20px;
+  border-bottom-width: 20px;
+  padding-bottom: 20px;
+  margin: 0;
 }
 
 .footer-txt {
@@ -212,6 +220,20 @@ footer {
   font-size: small;
 }
 
+@media (min-width: 768px) {
+  .footer {
+    display: flex;
+  }
+  .footer-img {
+    position: absolute;
+    margin-right: -10px;
+    right: 50px;
+  }
+  .footer-container {
+    display: flex;
+    justify-content: space-evenly;
+  }
+}
 /*polices Roboto et Shrikhand*/
 .hero {
   display: flex;
@@ -244,6 +266,7 @@ footer {
 
 /*polices Roboto et Shrikhand*/
 button {
+  display: flex;
   border: none;
   color: white;
   padding: 15px 29px;
@@ -284,11 +307,17 @@ button:hover {
 }
 
 .card-group {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
+  padding-bottom: 40px;
 }
 
+@media (min-width: 768px) {
+  .card-group {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+}
 .resto-card-content {
   height: 70px;
   display: flex;
@@ -299,7 +328,6 @@ button:hover {
 
 .card-txt {
   padding-left: 10px;
-  flex-wrap: nowrap;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -356,15 +384,17 @@ input {
   box-shadow: inset 0px 6px 4px -2px rgba(0, 0, 0, 0.2);
 }
 
+@media (min-width: 768px) {
+  .reserver-explorer h2 {
+    font-size: xxx-large;
+  }
+}
 /********************************Fonctionnement********************************************/
 .fonctionnement {
   padding: 10px 15px 45px 15px;
 }
 
 .fonctionnement-ul {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
   padding: 0;
 }
 
@@ -390,6 +420,10 @@ input {
   color: #9356dc;
 }
 
+.li {
+  margin-bottom: 20px;
+}
+
 .fonctionnement-li {
   padding: 7px 0px 7px 35px;
   margin-left: -10px;
@@ -403,11 +437,29 @@ input {
   box-shadow: rgba(149, 157, 165, 0.23) 0px 6px 10px;
 }
 
+@media (min-width: 768px) {
+  .fonctionnement {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    max-width: 1100px;
+    margin: auto;
+  }
+  .fonctionnement-ul {
+    display: flex;
+    justify-content: space-between;
+  }
+  .fonctionnement-li h4 {
+    padding-right: 40px;
+  }
+}
 /***************************Restaurants*****************************/
-.restaurants {
-  display: flex;
-  flex-direction: column;
+.bg-resto {
   background-color: #f6f6f6;
+  margin-bottom: -60px;
+}
+
+.restaurants {
   padding: 10px 15px 45px 15px;
 }
 
@@ -425,12 +477,24 @@ input {
   border-radius: 20px;
   filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
   overflow: hidden;
+  margin-bottom: 25px;
 }
 
 .restaurant-img {
   height: 208px;
-  width: 100%;
   border-radius: 20px 20px 0px 0px;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+@media (min-width: 768px) {
+  .restaurants {
+    display: flex;
+    flex-direction: column;
+    max-width: 1100px;
+    margin: auto;
+  }
+  .resto-card {
+    width: 45%;
+  }
 }/*# sourceMappingURL=accueil.css.map */

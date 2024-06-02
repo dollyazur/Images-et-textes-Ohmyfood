@@ -1,6 +1,7 @@
 .card-group {
   padding-bottom: 40px;
 }
+
 @media (min-width: 768px) {
   .card-group {
     display: flex;
@@ -8,4 +9,4 @@
     flex-wrap: wrap;
     align-items: center;
   }
-}
+}/*# sourceMappingURL=card-group.css.map */
