@@ -7,6 +7,7 @@
 @import url(https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shrikhand&display=swap);
 @import url(https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shrikhand&display=swap);
 @import url(https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shrikhand&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shrikhand&display=swap);
 body {
   margin: auto;
   display: flex;
@@ -68,35 +69,95 @@ p {
   text-overflow: ellipsis;
 }
 
-.etape-menu {
+.loader-container {
   display: flex;
-  flex-direction: column;
-  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  z-index: 100;
+  animation: fadeOut 5.4s forwards;
 }
-.etape-menu1 {
-  animation: slide 2s forwards;
-  animation-delay: 0s;
-  opacity: 0;
-}
-.etape-menu2 {
-  animation: slide 2s forwards;
-  animation-delay: 0.5s;
-  opacity: 0;
-}
-.etape-menu3 {
-  animation: slide 2s forwards;
-  animation-delay: 1s;
-  opacity: 0;
-}
-@keyframes slide {
+
+@keyframes fadeOut {
   0% {
-    transform: translatex(100px);
-    opacity: 0%;
+    opacity: 1;
+    visibility: visible;
+  }
+  99% {
+    opacity: 1;
+    visibility: visible;
   }
   100% {
-    transform: translatex(0px);
-    opacity: 100%;
+    opacity: 0;
+    visibility: hidden;
   }
+}
+.main-accueil {
+  animation: fadeIn 2s linear;
+  animation-delay: 5.4s;
+  animation-fill-mode: both;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.loader {
+  display: flex;
+  flex-wrap: nowrap;
+  text-align: center;
+  font-family: "Shrikhand", sans-serif;
+  font-size: 4.1em;
+  color: transparent;
+  letter-spacing: 0.01em;
+}
+
+.loader span {
+  text-shadow: 0 0 2px rgba(204, 208, 212, 0.9), 0 15px 25px rgba(0, 0, 0, 0.3), 0 -2px 3px rgba(0, 0, 0, 0.1), 0 -5px 10px rgba(255, 255, 255, 0.5), 0 5px 10px rgba(0, 0, 0, 0.3), 0 3px 4px rgba(255, 220, 255, 0.2), 0 0 20px rgba(147, 86, 220, 0.45);
+  animation: loading 0.85s ease-in-out infinite alternate;
+  animation-iteration-count: 5;
+}
+
+@keyframes loading {
+  to {
+    text-shadow: 0 0 2px rgba(204, 208, 212, 0.2), 0 0 3px rgba(0, 0, 0, 0.02), 0 0 0 rgba(0, 0, 0, 0), 0 0 0 rgba(255, 255, 255, 0), 0 0 0 rgba(0, 0, 0, 0), 0 0 0 rgba(255, 255, 255, 0), 0 0 0 rgba(255, 255, 255, 0);
+  }
+}
+.loader span:nth-child(2) {
+  animation-delay: 0.1s;
+}
+
+.loader span:nth-child(3) {
+  animation-delay: 0.2s;
+}
+
+.loader span:nth-child(4) {
+  animation-delay: 0.3s;
+}
+
+.loader span:nth-child(5) {
+  animation-delay: 0.4s;
+}
+
+.loader span:nth-child(6) {
+  animation-delay: 0.5s;
+}
+
+.loader span:nth-child(7) {
+  animation-delay: 0.6s;
+}
+
+.loader span:nth-child(8) {
+  animation-delay: 0.7s;
 }
 
 /*polices Roboto et Shrikhand*/
@@ -117,6 +178,67 @@ header {
   font-size: 21px;
 }
 
+/*polices Roboto et Shrikhand*/
+footer {
+  background-color: #2c2c2c;
+  position: relative;
+  z-index: 1;
+}
+
+.footer-img {
+  filter: invert(1);
+  height: 18px;
+  padding-top: 25px;
+  padding-left: 40px;
+}
+
+.footer-content {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  color: white;
+}
+
+.footer-container {
+  padding-top: 20px;
+  border-bottom-width: 20px;
+  padding-bottom: 20px;
+  margin: 0;
+}
+
+.footer-txt {
+  font-size: 16px;
+}
+
+.footer-txt-contact {
+  font-size: 16px;
+  padding-right: 150px;
+}
+
+.fa-solid.fa-utensils {
+  color: white;
+}
+
+.fa-solid.fa-handshake.fa-rotate-by {
+  --fa-rotate-angle: -45deg;
+  color: white;
+  font-size: small;
+}
+
+@media (min-width: 768px) {
+  .footer {
+    display: flex;
+  }
+  .footer-img {
+    position: absolute;
+    margin-right: -10px;
+    right: 50px;
+  }
+  .footer-container {
+    display: flex;
+    justify-content: space-evenly;
+  }
+}
 /*polices Roboto et Shrikhand*/
 .hero {
   display: flex;
@@ -171,6 +293,23 @@ button {
 button:hover {
   opacity: 0.7;
   box-shadow: rgb(149, 157, 165) 0px 8px 10px;
+}
+
+/*polices Roboto et Shrikhand*/
+.new {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgba(38, 158, 128, 0.9411764706);
+  background-color: #99e2d0;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 7px 10px;
+  margin: 0;
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  z-index: 2;
 }
 
 .card-group,
@@ -247,201 +386,4 @@ input {
 /* Masquer l'icône régulière lorsque le cœur est cliqué */
 .heart-checkbox:checked + .heart-label .fa-regular {
   opacity: 0;
-}
-
-.fa-circle-check {
-  position: absolute;
-  font-size: x-large;
-  color: white;
-  height: 100%;
-  width: 11%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #99e2d0;
-  border-radius: 0px 20px 20px 0px;
-  padding-right: 5px;
-}
-
-.circle-bg {
-  width: 0%;
-}
-
-.animation {
-  display: flex;
-  align-items: flex-end;
-  padding-right: 20px;
-  font-weight: 700;
-  padding-bottom: 10px;
-}
-
-.menu-resto-card-content:hover {
-  animation: pousse-toi 1s forwards;
-}
-
-@keyframes pousse-toi {
-  0% {
-    width: 100%;
-  }
-  100% {
-    width: 88%;
-  }
-}
-/*polices Roboto et Shrikhand*/
-footer {
-  background-color: #2c2c2c;
-  position: relative;
-  z-index: 1;
-}
-
-.footer-img {
-  filter: invert(1);
-  height: 18px;
-  padding-top: 25px;
-  padding-left: 40px;
-}
-
-.footer-content {
-  display: flex;
-  align-items: center;
-  gap: 15px;
-  color: white;
-}
-
-.footer-container {
-  padding-top: 20px;
-  border-bottom-width: 20px;
-  padding-bottom: 20px;
-  margin: 0;
-}
-
-.footer-txt {
-  font-size: 16px;
-}
-
-.footer-txt-contact {
-  font-size: 16px;
-  padding-right: 150px;
-}
-
-.fa-solid.fa-utensils {
-  color: white;
-}
-
-.fa-solid.fa-handshake.fa-rotate-by {
-  --fa-rotate-angle: -45deg;
-  color: white;
-  font-size: small;
-}
-
-@media (min-width: 768px) {
-  .footer {
-    display: flex;
-  }
-  .footer-img {
-    position: absolute;
-    margin-right: -10px;
-    right: 50px;
-  }
-  .footer-container {
-    display: flex;
-    justify-content: space-evenly;
-  }
-}
-.main-menu {
-  padding: 20px 15px 0px 15px;
-  background-color: #f6f6f6;
-  border-top-left-radius: 40px;
-  border-top-right-radius: 40px;
-  transform: translate(0px, -60px);
-  position: relative;
-  z-index: 2;
-}
-
-.etape-menu1,
-.etape-menu2,
-.etape-menu3 {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-.menu-title {
-  padding: 20px 0;
-  text-transform: uppercase;
-}
-
-.menu-title::after {
-  content: "";
-  width: 50px;
-  height: 2px;
-  display: block;
-  position: absolute;
-  background-color: #99e2d0;
-  margin-top: 5px;
-  padding-top: 1px;
-}
-
-.bg-resto,
-.bg-resto-menu {
-  background-color: #f6f6f6;
-  margin-bottom: -60px;
-}
-
-@media (min-width: 768px) {
-  .bg-resto-menu {
-    padding-bottom: 60px;
-    width: 70%;
-    margin: auto;
-  }
-}
-.nom-resto {
-  font-family: "Shrikhand";
-  font-size: 28px;
-  font-weight: 500;
-  padding: 15px 0px 0px 0px;
-  margin: 0;
-}
-
-.menu-resto-card-content {
-  display: flex;
-  justify-content: space-between;
-  padding-left: 5px;
-  white-space: nowrap;
-  overflow: hidden;
-  width: 100%;
-}
-
-.menu-resto-card {
-  display: flex;
-  background-color: white;
-  border-radius: 20px;
-  filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
-  overflow: hidden;
-}
-
-.menu-card-txt {
-  padding: 0px 0px 10px 15px;
-  flex-wrap: nowrap;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-@media (min-width: 768px) {
-  .restaurant-menu-img {
-    max-height: 400px;
-    -o-object-fit: cover;
-       object-fit: cover;
-  }
-  .main-menu .resto-card-content {
-    display: flex;
-    justify-content: center;
-    gap: 80px;
-    padding-bottom: 50px;
-    align-items: center;
-  }
-  .main-menu .resto-card-content .card-txt .nom-resto {
-    font-size: 35px;
-  }
-}/*# sourceMappingURL=restaurant.css.map */
+}/*# sourceMappingURL=main-accueil.css.map */

@@ -2,6 +2,7 @@
 @import "../utils/mixins.scss";
 button {
   display: flex;
+  @include all-font;
   border: none;
   color: $white-color;
   padding: 15px 29px;

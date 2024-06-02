@@ -272,6 +272,7 @@ footer {
 /*polices Roboto et Shrikhand*/
 button {
   display: flex;
+  font-family: "Roboto";
   border: none;
   color: white;
   padding: 15px 29px;
@@ -311,7 +312,8 @@ button:hover {
   z-index: 2;
 }
 
-.card-group {
+.card-group,
+.card-group-menu {
   padding-bottom: 40px;
 }
 
@@ -321,6 +323,10 @@ button:hover {
     justify-content: space-around;
     flex-wrap: wrap;
     align-items: center;
+  }
+  .card-group-menu {
+    width: 54%;
+    margin: auto;
   }
 }
 .resto-card-content {

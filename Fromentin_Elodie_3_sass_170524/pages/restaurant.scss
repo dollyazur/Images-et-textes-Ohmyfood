@@ -30,9 +30,17 @@
   margin-top: 5px;
   padding-top: 1px;
 }
-.bg-resto {
+.bg-resto,
+.bg-resto-menu {
   background-color: $main-bg-color;
   margin-bottom: -60px;
+}
+@media (min-width: 768px) {
+  .bg-resto-menu {
+    padding-bottom: 60px;
+    width: 70%;
+    margin: auto;
+  }
 }
 .nom-resto {
   @include title-font;
