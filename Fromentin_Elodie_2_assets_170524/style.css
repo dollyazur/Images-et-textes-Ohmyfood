@@ -8,11 +8,60 @@
 }
 body {
   margin: auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   max-width: 768px;
   min-width: 375px;
+}
+
+@media (min-width: 768px) {
+  body {
+    max-width: 1903px;
+    min-width: 768px;
+  }
+  .reserver-explorer h2 {
+    font-size: xxx-large;
+  }
+  .fonctionnement {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    max-width: 1100px;
+    margin: auto;
+  }
+  .fonctionnement-ul {
+    display: flex;
+    justify-content: space-between;
+  }
+  .fonctionnement-li h4 {
+    padding-right: 40px;
+  }
+  .restaurants {
+    display: flex;
+    flex-direction: column;
+    max-width: 1100px;
+    margin: auto;
+  }
+  .resto-card {
+    width: 45%;
+  }
+  .card-group {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding-bottom: 20px;
+  }
+  .footer {
+    display: flex;
+  }
+  .footer-img {
+    position: absolute;
+    margin-right: -10px;
+    right: 50px;
+  }
+  .footer-container {
+    display: flex;
+    justify-content: flex-end;
+    gap: 80px;
+  }
 }
 main,
 footer {
@@ -140,6 +189,7 @@ header {
   box-shadow: inset 0px 6px 4px -2px rgb(0 0 0 / 20%);
 }
 button {
+  display: flex;
   font-family: "Roboto";
   border: none;
   color: white;
@@ -166,9 +216,6 @@ button:hover {
   padding: 10px 15px 45px 15px;
 }
 .fonctionnement-ul {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
   padding: 0;
 }
 .nbr {
@@ -188,6 +235,9 @@ button:hover {
 .fa-solid.fa-store {
   font-size: larger;
   color: #9356dc;
+}
+.li {
+  margin-bottom: 20px;
 }
 .fonctionnement-li {
   padding: 7px 0px 7px 35px;
@@ -224,10 +274,10 @@ button:hover {
   right: 1.5rem;
   z-index: 2;
 }
-.restaurants {
-  display: flex;
-  flex-direction: column;
+.bg-resto {
   background-color: #f6f6f6;
+}
+.restaurants {
   padding: 10px 15px 45px 15px;
 }
 .a-resto-cards {
@@ -235,11 +285,6 @@ button:hover {
   height: 100%;
   width: 100%;
   z-index: 3;
-}
-.card-group {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
 }
 
 .etape-menu1 {
@@ -275,10 +320,11 @@ button:hover {
   border-radius: 20px;
   filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
   overflow: hidden;
+  margin-bottom: 25px;
 }
 .restaurant-img {
   height: 208px;
-  width: 100%;
+
   border-radius: 20px 20px 0px 0px;
   object-fit: cover;
 }
@@ -289,17 +335,19 @@ button:hover {
   padding: 5px 0px 5px 5px;
   overflow: hidden;
 }
+.card-group {
+  padding-bottom: 20px;
+}
 .menu-resto-card-content {
   display: flex;
   justify-content: space-between;
   padding-left: 5px;
   white-space: nowrap;
   overflow: hidden;
-  width: 100%;
 }
 .card-txt {
   padding-left: 10px;
-  flex-wrap: nowrap;
+
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -411,7 +459,8 @@ footer {
 .footer-img {
   filter: invert(1);
   height: 18px;
-  padding-bottom: 20px;
+  padding-top: 25px;
+  padding-left: 40px;
 }
 .footer-content {
   display: flex;
@@ -420,7 +469,11 @@ footer {
   color: white;
 }
 .footer-container {
-  margin: 30px 0px 30px 0px;
+  padding-top: 20px;
+  border-bottom-width: 20px;
+  padding-bottom: 20px;
+  padding-right: 250px;
+  margin: 0;
 }
 .footer-txt {
   font-size: 16px;
