@@ -8,19 +8,19 @@ button {
   padding: 15px 29px;
   font-size: 15px;
   text-align: center;
-  background: linear-gradient(#ff79da, #9356dc);
+  background: linear-gradient($second-color, $main-color);
   width: min-content;
   white-space: nowrap;
   margin: auto;
   margin-top: 40px;
   margin-bottom: 55px;
   border-radius: 30px;
-  box-shadow: rgba(149, 157, 165, 0.5) 0px 8px 10px;
+  box-shadow: $box-shadow-color 0px 8px 10px;
   cursor: pointer;
   transition: 0.4s ease-in-out;
 
   &:hover {
     opacity: 0.7;
-    box-shadow: rgba(149, 157, 165, 1) 0px 8px 10px;
+    box-shadow: $box-shadow-hover-color 0px 8px 10px;
   }
 }

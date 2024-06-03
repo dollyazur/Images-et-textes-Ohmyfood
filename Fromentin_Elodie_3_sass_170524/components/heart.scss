@@ -33,8 +33,6 @@ input {
 .heart-checkbox:checked + .heart-label .solid-heart {
   opacity: 1;
   background: linear-gradient($second-color 3%, $main-color 120%);
-
-  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 /* Masquer l'icône régulière lorsque le cœur est cliqué */
