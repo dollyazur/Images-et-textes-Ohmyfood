@@ -379,6 +379,7 @@ input {
 .heart-checkbox:checked + .heart-label .solid-heart {
   opacity: 1;
   background: linear-gradient(#ff79da 3%, #9356dc 120%);
+  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 

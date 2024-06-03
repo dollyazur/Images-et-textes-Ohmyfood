@@ -26,11 +26,22 @@
 .menu-resto-card-content:hover {
   animation: pousse-toi 1s forwards;
 }
+.menu-resto-card-content:not(:hover) {
+  animation: reviens 1s forwards;
+}
 @keyframes pousse-toi {
   0% {
     width: 100%;
   }
   100% {
     width: 88%;
+  }
+}
+@keyframes reviens {
+  0% {
+    width: 88%;
+  }
+  100% {
+    width: 100%;
   }
 }
