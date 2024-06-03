@@ -1,0 +1,44 @@
+@charset "UTF-8";
+.heart {
+  position: relative;
+  z-index: 3;
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 20px;
+  padding-right: 10px;
+}
+.heart .heart-label {
+  width: 28px;
+  height: 28px;
+  cursor: pointer;
+  position: relative;
+  display: flex;
+}
+.heart .heart-icon {
+  font-size: 1.7rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+input {
+  display: none;
+}
+
+/* État initial du cœur */
+.heart-checkbox:not(:checked) + .heart-label .solid-heart {
+  opacity: 0;
+}
+
+/* État cliqué du cœur */
+.heart-checkbox:checked + .heart-label .solid-heart {
+  opacity: 1;
+  background: linear-gradient(#ff79da 3%, #9356dc 120%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Masquer l'icône régulière lorsque le cœur est cliqué */
+.heart-checkbox:checked + .heart-label .fa-regular {
+  opacity: 0;
+}/*# sourceMappingURL=heart.css.map */
